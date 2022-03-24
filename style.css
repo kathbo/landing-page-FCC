@@ -1,0 +1,65 @@
+html {
+    background: transparent linear-gradient(155.52deg, #F8C7C8 18.54%, #FAC1C2 24.61%, #FEB6B8 42.81%, #FFB2B4 61.01%, #DC939C 105.21%);
+    padding: 2em 6em;
+    height: 100vh; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#header-img {
+    position: relative;
+    top: -1.5rem;
+}
+nav,
+button#nav {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+nav 
+a {
+    padding-left: 1em;
+    text-decoration: none;
+}
+
+main {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin: 0;
+}
+p {
+    font-size: 1.25rem;
+}
+span {
+    color: #8468F5;
+}
+form {
+    display: flex;
+    flex-direction: row;
+}
+fieldset {
+    border: none;
+}
+input {
+    font-size: 0.875rem;
+    flex-grow: 1;
+    border: white;
+    padding: 1.5em;
+    border-radius: 30px;
+}
+button#mail {
+    font-size: 0.875rem;
+}
