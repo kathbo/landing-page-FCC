@@ -48,10 +48,13 @@ form {
     display: flex;
     flex-direction: row;
 }
-
 input {
-    border: white;
     border-radius: 30px;
+    flex: 1;
+    border: none;
+    width: 100%;
+    padding: 1em;
+    
 }
 button#submitbutton {
     background: var(--purplepink);
@@ -60,6 +63,13 @@ button#submitbutton {
     color: white;
     display: flex;
     align-items: center;
+    padding: 0.5em 1em;
+
+}
+.buttn {
+    position: relative;
+    top: 0.4em;
+    right: 6em;
 }
 #sendicon {
     padding-left: 0.5em;
