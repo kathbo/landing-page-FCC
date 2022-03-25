@@ -74,3 +74,21 @@ button#submitbutton {
 #sendicon {
     padding-left: 0.5em;
 }
+div#social {
+    display: flex;
+    gap: 1em;
+}
+a.sociala {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle {
+    width: 2.5em;
+    height: 2.5em;
+    background: var(--purple);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
