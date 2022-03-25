@@ -1,15 +1,16 @@
 html {
-    background: transparent linear-gradient(155.52deg, #F8C7C8 18.54%, #FAC1C2 24.61%, #FEB6B8 42.81%, #FFB2B4 61.01%, #DC939C 105.21%);
+    height: 100%;
 }
-
+body {
+    background: transparent linear-gradient(155.52deg, #F8C7C8 18.54%, #FAC1C2 24.61%, #FEB6B8 42.81%, #FFB2B4 61.01%, #DC939C 105.21%);
+    height: 100%;
+    background-attachment: fixed;
+ }
 header {
     display: flex;
     justify-content: space-between;
 }
 
-#header-img {
-    position: relative;
-}
 nav,
 button#nav {
     font-family: 'Poppins', sans-serif;
