@@ -16,7 +16,10 @@ header {
     display: flex;
     justify-content: space-between;
 }
-
+img#header-img {
+    max-width: 100%;
+    margin: auto;
+}
 nav {
     font-weight: 500;
 }
@@ -28,6 +31,9 @@ button#navbutton {
     border-radius: 13px;
     background: var(--purple);
     color: white;
+}
+button {
+    font-family: 'Poppins', sans-serif;
 }
 main {
     display: flex;
@@ -73,6 +79,10 @@ button#submitbutton {
 }
 #sendicon {
     padding-left: 0.5em;
+}
+#img-main {
+    max-width: 100%;
+    margin: auto;
 }
 div#social {
     display: flex;
