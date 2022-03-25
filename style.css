@@ -1,5 +1,11 @@
+:root {
+    --purple: linear-gradient(250.46deg, #8468F5 72.09%, #EC74E7 352.57%);
+    --purplepink: linear-gradient(198.06deg, #8468F5 30.76%, #EC74E7 132.15%);
+}
+
 html {
     height: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 body {
     background: transparent linear-gradient(155.52deg, #F8C7C8 18.54%, #FAC1C2 24.61%, #FEB6B8 42.81%, #FFB2B4 61.01%, #DC939C 105.21%);
@@ -11,19 +17,19 @@ header {
     justify-content: space-between;
 }
 
-nav,
-button#nav {
-    font-family: 'Poppins', sans-serif;
+nav {
     font-weight: 500;
 }
-
-nav 
-a {
+nav, a {
     text-decoration: none;
 }
-
+button#navbutton {
+    border: none;
+    border-radius: 13px;
+    background: var(--purple);
+    color: white;
+}
 main {
-    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -42,12 +48,19 @@ form {
     display: flex;
     flex-direction: row;
 }
-fieldset {
-    border: none;
-}
+
 input {
     border: white;
     border-radius: 30px;
 }
-button#mail {
+button#submitbutton {
+    background: var(--purplepink);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+#sendicon {
+    padding-left: 0.5em;
 }
