@@ -72,7 +72,7 @@ span {
 /* form */
 
 form {
-    width: 300px;
+    max-width: 90%;
 }
 .insideButton {
     position: relative;
