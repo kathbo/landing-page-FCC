@@ -5,11 +5,13 @@
 
 html {
     font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    width: 100vw;
 }
 body {
     background: transparent linear-gradient(155.52deg, #F8C7C8 18.54%, #FAC1C2 24.61%, #FEB6B8 42.81%, #FFB2B4 61.01%, #DC939C 105.21%);
     background-attachment: fixed;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
  }
 
@@ -71,14 +73,18 @@ span {
 
 form {
     width: 300px;
+}
+.insideButton {
     position: relative;
 }
 input {
     border-radius: 30px;
     border: none;
     font-size: 0.8em;
-    color: cadetblue;
-    padding: 0.7em 2em;
+
+    padding-left: 2em;
+    height: 35px;
+    width: 100%;
 }
 button#submitbutton {
     background: var(--purplepink);
@@ -87,19 +93,13 @@ button#submitbutton {
     color: white;
     display: flex;
     align-items: center;
-    padding: 0.4em 1em;
-    margin-top: 0.1em;
+    
+    padding: 0.3em 1em;
     position: absolute;
-    top: 0;
-    right: -3em;
+    right: -20px;
+    top: 5px;
     cursor: pointer;
-    transform: translateX(2px);
 }
-
-
-
-
-
 
 #sendicon {
     padding-left: 0.5em;
@@ -128,4 +128,10 @@ a.sociala {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (min-width: 320px) {
+    main {
+        
+    }
 }
