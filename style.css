@@ -4,24 +4,33 @@
 }
 
 html {
-    height: 100%;
     font-family: 'Poppins', sans-serif;
 }
 body {
     background: transparent linear-gradient(155.52deg, #F8C7C8 18.54%, #FAC1C2 24.61%, #FEB6B8 42.81%, #FFB2B4 61.01%, #DC939C 105.21%);
-    height: 100%;
     background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
  }
+
+/* header */
+
 header {
     display: flex;
     justify-content: space-between;
+    padding: 0.5em;
 }
 img#header-img {
-    max-width: 100%;
+    max-width: 25vw;
     margin: auto;
 }
 nav {
     font-weight: 500;
+    display: flex;
+    gap: 0.3em;
+    font-size: clamp(0.8em, 2vh, 1.2em);
+    text-align: end;
+    flex-direction: column;
 }
 nav, a {
     text-decoration: none;
@@ -31,36 +40,45 @@ button#navbutton {
     border-radius: 13px;
     background: var(--purple);
     color: white;
+    padding: 0.25em;
 }
 button {
     font-family: 'Poppins', sans-serif;
 }
+
+/* main */
+
 main {
+    padding: 2em 0.5em 0.5em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
-
 h1 {
     font-weight: 700;
+    font-size: clamp(1.5em, 2vw, 2em);
+    line-height: 1.2em;
 }
-p {
+p#main-p {
+    padding: 0.6em 0;
 }
 span {
     color: #8468F5;
 }
+
+/* form */
+
 form {
-    display: flex;
-    flex-direction: row;
+    width: 300px;
+    position: relative;
 }
 input {
     border-radius: 30px;
-    flex: 1;
     border: none;
-    width: 100%;
-    padding: 1em;
-    
+    font-size: 0.8em;
+    color: cadetblue;
+    padding: 0.7em 2em;
 }
 button#submitbutton {
     background: var(--purplepink);
@@ -69,14 +87,20 @@ button#submitbutton {
     color: white;
     display: flex;
     align-items: center;
-    padding: 0.5em 1em;
+    padding: 0.4em 1em;
+    margin-top: 0.1em;
+    position: absolute;
+    top: 0;
+    right: -3em;
+    cursor: pointer;
+    transform: translateX(2px);
+}
 
-}
-.buttn {
-    position: relative;
-    top: 0.4em;
-    right: 6em;
-}
+
+
+
+
+
 #sendicon {
     padding-left: 0.5em;
 }
@@ -84,6 +108,9 @@ button#submitbutton {
     max-width: 100%;
     margin: auto;
 }
+
+/* footer */
+
 div#social {
     display: flex;
     gap: 1em;
