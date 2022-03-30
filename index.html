@@ -16,36 +16,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--
-    <header id="header">
-        <div>
-            <img src="pics/Design studio logo 1.png" alt="logo picture" id="header-img">
-        </div>
-        <nav id="nav-bar">
-            <a class="nav-a" href="">Home</a>
-            <a class="nav-a" href="">Products</a>
-            <a class="nav-a" href="">Support</a>
-            <a class="nav-a" href="">About</a>
-            <button id="navbutton">Quote</button>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </nav>
-    </header>
-    -->
-    <div class="topnav" id="myTopnav">
+    <div class="header" id="myTopnav">
         <a href="#home" class="active"><img src="pics/Design studio logo 1.png" alt="logo picture" id="header-img"></a>
         <a class="nav-a home-nav" href="">Home</a>
         <a class="nav-a" href="">Products</a>
         <a class="nav-a" href="">Support</a>
         <a class="nav-a" href="">About</a>
-        <a class="nav-a quote-nav" href="#quote">Quote</a>
+        <button class="quote-nav" href="#quote">Quote</button>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
-        </a>
-        
-      </div>
-
+        </a>  
+    </div>
 
     <main>
         <div>
@@ -59,6 +40,7 @@
                     
             </form> 
         </div>
+        <img1 src="/pics/Group.png" alt="">
     </main>
     <footer>
         <div id="social">
@@ -72,10 +54,10 @@
     <script>
         function myFunction() {
           var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
+          if (x.className === "header") {
             x.className += " responsive";
           } else {
-            x.className = "topnav";
+            x.className = "header";
           }
         }
         </script>
