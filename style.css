@@ -201,8 +201,11 @@ a.sociala {
     font-weight: 600;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 400px) {
+    div.header {
+        padding: 0.5em 0.8em;
+    }
     main {
-        
+        padding: 1.5em 0.8em 0;
     }
 }
