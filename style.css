@@ -29,13 +29,13 @@ body {
     color: black;
     text-decoration: none;
     font-weight: 500;
-    font-size: clamp(1em, 2vh, 1.2em);
+    font-size: clamp(1em, 1vw, 1.5em);
 }
 .active { /* logo */
     float: left;
 }
 img#header-img {
-    width: clamp(4em, 15vw, 30vw);
+    width: clamp(5em, 9vw, 10em);
     margin: auto;
 }
 
@@ -59,46 +59,6 @@ i { /* menu icon */
     font-family: 'Poppins', sans-serif;
 }
 
-@media screen and (max-width: 600px) {
-    .header a:not(:first-child), .quote-nav {display: none;}
-    .header a.icon {display: block;}
-    .nav-a {
-        padding: 0.7em 0.8em;
-    }
-    .nav-a:hover {
-        color: white;
-        transition: ease 200ms;
-    }
-
-    .quote-nav {
-        margin-right: 0.5em;
-        padding: 0.3em 1em;
-    }
-    .quote-nav:hover {
-        background: var(--purplepink);
-        transition: ease 2s;
-    }
-    .header.responsive {position: relative;} /* when shrunk */
-    .header.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-        margin: 0.5em;
-    }
-    .header.responsive a:last-child {
-        transform: rotate(90deg);
-    }
-    .header.responsive a:not(:first-child) {
-        display: block;
-        text-align: right;
-        
-    }
-    .header.responsive button {
-        display: block;
-        float: right;
-    }
-}
-
 /* main */
 
 main {
@@ -110,12 +70,13 @@ main {
 }
 h1 {
     font-weight: 700;
-    font-size: clamp(1.7em, 2vw, 2em);
+    font-size: clamp(1.7em, 2.5vw, 3em);
     line-height: 1.2em;
 }
 p#main-p {
     padding: 0.8em 0;
-    font-size: clamp(1em, 2vw, 2em);
+    line-height: 1.3em;
+    font-size: clamp(1em, 1vw, 1.5em);
 }
 span {
     color: #8468F5;
@@ -192,6 +153,7 @@ a.sociala {
 #p-foot {
     margin-top: 0.5em;
     text-align: center;
+    font-size: 1em;
 }
 .authors {
     text-decoration: none;
@@ -201,11 +163,90 @@ a.sociala {
     font-weight: 600;
 }
 
+@media screen and (max-width: 600px) {
+    .header a:not(:first-child), .quote-nav {display: none;}
+    .header a.icon {display: block;}
+    .nav-a {
+        padding: 0.7em 0.8em;
+    }
+    .nav-a:hover {
+        color: white;
+        transition: ease 200ms;
+    }
+
+    .quote-nav {
+        margin-right: 0.5em;
+        padding: 0.3em 1em;
+    }
+    .quote-nav:hover {
+        background: var(--purplepink);
+        transition: ease 2s;
+    }
+    .header.responsive {position: relative;} /* when shrunk */
+    .header.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 0.5em 0.8em;
+    }
+    .header.responsive a:last-child {
+        transform: rotate(90deg);
+    }
+    .header.responsive a:not(:first-child) {
+        display: block;
+        text-align: right;
+        
+    }
+    .header.responsive button {
+        display: block;
+        float: right;
+    }
+}
+
 @media (min-width: 400px) {
     div.header {
         padding: 0.5em 0.8em;
     }
     main {
         padding: 1.5em 0.8em 0;
+    }
+    i {
+        font-size: 1.7em;
+    }
+    p#main-p {
+        max-width: 25em;
+    }
+}
+@media (min-width: 570px) {
+    footer {
+        padding: 0 5em 0.5em;
+    }
+}
+@media (min-width: 600px) {
+    .home-nav {
+        margin: 0;
+    }
+    .nav-a, .quote-nav {
+        margin-top: 0.8em;
+        margin-left: 1em;
+        
+    }
+    .nav-a:hover {
+        color: #8668f5;
+        transition: linear 0.15s;
+        border-bottom: 2px solid #8668f5;
+        padding-bottom: 5px;
+    }
+    .quote-nav {
+        padding: 0 0.8em;
+    }
+    main {
+        padding: 2em 1em 0;
+    }
+    footer {
+        padding: 0 10em 0.5em
+    }
+    #p-foot {
+        margin-top: 0.7em;
     }
 }
