@@ -21,7 +21,7 @@ body {
     overflow: hidden;
     text-align: right;
     backdrop-filter: blur(10px); /* ................... */
-    padding: 1em 0.5em;
+    padding: 0.5em;
 }
 
 .nav-a, .quote-nav {
@@ -35,7 +35,7 @@ body {
     float: left;
 }
 img#header-img {
-    max-width: 20vw; /* ................... */
+    width: clamp(4em, 15vw, 30vw);
     margin: auto;
 }
 
@@ -63,18 +63,27 @@ i { /* menu icon */
     .header a:not(:first-child), .quote-nav {display: none;}
     .header a.icon {display: block;}
     .nav-a {
-        padding: 0.8em;
+        padding: 0.7em 0.8em;
     }
+    .nav-a:hover {
+        color: white;
+        transition: ease 200ms;
+    }
+
     .quote-nav {
         margin-right: 0.5em;
         padding: 0.3em 1em;
+    }
+    .quote-nav:hover {
+        background: var(--purplepink);
+        transition: ease 2s;
     }
     .header.responsive {position: relative;} /* when shrunk */
     .header.responsive .icon {
         position: absolute;
         right: 0;
         top: 0;
-        margin: 1em 0.5em;
+        margin: 0.5em;
     }
     .header.responsive a:last-child {
         transform: rotate(90deg);
