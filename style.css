@@ -251,6 +251,9 @@ a.sociala {
     }
 }
 @media all and (min-width: 800px) {
+    .header {
+        padding: 0.5em 1.5em 0;
+    }
     main {
         flex-direction: row;
         padding: 3em 1.5em 0;
@@ -264,7 +267,13 @@ a.sociala {
     }
 }
 @media (min-width: 1000px) {
+    div.header {
+        padding: 0.5em 5em 0;
+    }
     main {
-        padding: 3em 5em 0;
+        padding: 2em 5em 0;
+    }
+    footer {
+        padding: 0 20em 0.5em;
     }
 }
