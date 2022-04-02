@@ -35,7 +35,7 @@ body {
     float: left;
 }
 img#header-img {
-    width: clamp(5em, 9vw, 10em);
+    width: clamp(5em, 9vw, 8em);
     margin: auto;
 }
 
@@ -278,6 +278,9 @@ a.sociala {
     }
 }
 @media (min-width: 1400px) {
+    img#header-img {
+        max-width: 6em;
+    }
     footer {
         padding: 0 30em 0.5em;
     }
