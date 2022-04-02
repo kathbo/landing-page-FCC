@@ -285,3 +285,38 @@ a.sociala {
         padding: 0 30em 0.5em;
     }
 }
+@media (min-width: 2500px) {
+    div.header {
+        padding: 1em 8em 0;
+    }
+    img#header-img {
+        max-width: 8em;
+    }
+    .nav-a, .quote-nav {
+        font-size: 1.5em;
+    }
+    main {
+        padding: 2em 8em 0;
+    }
+    h1 {
+        font-size: 3.2em;
+    }
+    p#main-p {
+        font-size: 1.7em;
+    }
+    input {
+        height: 50px;
+        font-size: 1.2em;
+    }
+    button#submitbutton {
+        font-size: 1.2em;
+        right: -30px;
+        top: 7px;
+    }
+    footer {
+        padding: 0 60em 0.5em;
+    }
+    p#p-foot {
+        font-size: 1.3em;
+    }
+}
