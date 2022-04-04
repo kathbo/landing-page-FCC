@@ -66,7 +66,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly
+}
+div.main-text{
+    min-width: 50%;
 }
 h1 {
     font-weight: 700;
@@ -81,11 +84,14 @@ p#main-p {
 span {
     color: #8468F5;
 }
+div.image {
+    
+}
 img#sample-img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: auto;
+    
 }
 
 /* form */
@@ -243,6 +249,9 @@ a.sociala {
     main {
         padding: 2em 1em 0;
     }
+    img#sample-img {
+        max-width: 80%;
+    }
     footer {
         padding: 0 10em 0.5em
     }
@@ -258,9 +267,9 @@ a.sociala {
         flex-direction: row;
         padding: 3em 1.5em 0;
     }
-    #sample-img {
-        max-width: 50%  !important;
-        margin: 0 !important;
+    img#sample-img {
+        max-width: 100%;
+        margin-left: auto;
     }
     footer {
         padding: 0 15em 0.5em;
