@@ -5,15 +5,15 @@
 
 html {
     font-family: 'Poppins', sans-serif;
-    width: 100vw;
     background-size: cover;
 }
 body {
     background: transparent linear-gradient(155.52deg, #F8C7C8 18.54%, #FAC1C2 24.61%, #FEB6B8 42.81%, #FFB2B4 61.01%, #DC939C 105.21%);
     background-attachment: fixed;
-    min-height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
  }
+
+
 
 /* header */
   
@@ -37,6 +37,7 @@ body {
 img#header-img {
     width: clamp(5em, 9vw, 8em);
     margin: auto;
+    
 }
 
 i { /* menu icon */
@@ -66,7 +67,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly
+    justify-content: space-between;
 }
 
 h1 {
@@ -82,13 +83,12 @@ p#main-p {
 span {
     color: #8468F5;
 }
-div.image {
-    
-}
+
 img#sample-img {
     max-width: 100%;
     height: auto;
     display: block;
+
     
 }
 
@@ -281,6 +281,9 @@ a.sociala {
     main {
         padding: 2em 5em 0;
     }
+    div.main-text {
+        flex: 2 1 auto;
+    }
     div.image {
         max-width: 60%;
     }
@@ -292,7 +295,7 @@ a.sociala {
     img#header-img {
         max-width: 6em;
     }
-    div.image {
+    div.image1 {
         max-width: 50%;
     }
     footer {
