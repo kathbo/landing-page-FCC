@@ -29,15 +29,14 @@ body {
     color: black;
     text-decoration: none;
     font-weight: 500;
-    font-size: clamp(1em, 1vw, 1.5em);
+    font-size: 1em;
 }
 .active { /* logo */
     float: left;
 }
 img#header-img {
-    width: clamp(5em, 9vw, 8em);
+    width: clamp(5em, 15vw, 8em);
     margin: auto;
-    
 }
 
 i { /* menu icon */
@@ -46,7 +45,7 @@ i { /* menu icon */
 }
 .header .icon {
     display: none;
-    padding: 0.5em; 
+    padding: 0.8em 0.5em 0.5em;
 }
 
 .home-nav { /* home a */
@@ -76,9 +75,10 @@ h1 {
     line-height: 1.2em;
 }
 p#main-p {
-    padding: 0.8em 0;
+    padding: 0.9em 0;
     line-height: 1.3em;
     font-size: clamp(1em, 1vw, 1.5em);
+    opacity: 0.8;
 }
 span {
     color: #8468F5;
@@ -191,7 +191,8 @@ a.sociala {
         position: absolute;
         right: 0;
         top: 0;
-        margin: 0.5em 0.8em;
+        margin: 0.7em 0.4em;
+        
     }
     .header.responsive a:last-child {
         transform: rotate(90deg);
@@ -231,8 +232,8 @@ a.sociala {
         margin: 0;
     }
     .nav-a, .quote-nav {
-        margin-top: 0.8em;
-        margin-left: 1em;
+        margin-top: 1em;
+        margin-left: 1.4em;
         
     }
     .nav-a:hover {
@@ -242,7 +243,7 @@ a.sociala {
         padding-bottom: 5px;
     }
     .quote-nav {
-        padding: 0 0.8em;
+        padding: 0.2em 1.3em;
     }
     main {
         padding: 2em 1em 0;
@@ -278,6 +279,9 @@ a.sociala {
     div.header {
         padding: 0.5em 5em 0;
     }
+    .quote-nav {
+        padding: 0.1em 1.5em;
+    }
     main {
         padding: 2em 5em 0;
     }
@@ -292,9 +296,6 @@ a.sociala {
     }
 }
 @media (min-width: 1400px) {
-    img#header-img {
-        max-width: 6em;
-    }
     div.image1 {
         max-width: 50%;
     }
@@ -307,11 +308,14 @@ a.sociala {
         padding: 1em 8em 0;
     }
     img#header-img {
-        max-width: 8em;
+        width: 13em;
     }
     .nav-a, .quote-nav {
-        font-size: 1.5em;
+        font-size: 1.7em;
+        margin-top: 1.4em;
+        margin-left: 2em;
     }
+    
     main {
         padding: 2em 8em 0;
     }
