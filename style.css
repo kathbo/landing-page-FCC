@@ -68,9 +68,7 @@ main {
     align-items: center;
     justify-content: space-evenly
 }
-div.main-text{
-    min-width: 50%;
-}
+
 h1 {
     font-weight: 700;
     font-size: clamp(1.7em, 2.5vw, 3em);
@@ -275,12 +273,16 @@ a.sociala {
         padding: 0 15em 0.5em;
     }
 }
+
 @media (min-width: 1000px) {
     div.header {
         padding: 0.5em 5em 0;
     }
     main {
         padding: 2em 5em 0;
+    }
+    div.image {
+        max-width: 60%;
     }
     footer {
         padding: 0 20em 0.5em;
@@ -289,6 +291,9 @@ a.sociala {
 @media (min-width: 1400px) {
     img#header-img {
         max-width: 6em;
+    }
+    div.image {
+        max-width: 50%;
     }
     footer {
         padding: 0 30em 0.5em;
