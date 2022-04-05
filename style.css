@@ -282,7 +282,15 @@ a.sociala {
         top: 7px;
     }
     footer {
-        padding: 0 15em 0.5em;
+        padding: 0 1.5em 0.5em;
+    }
+    div#social {
+        max-width: 15em;
+        justify-content: space-between;
+    }
+    #p-foot {
+        text-align: left;
+        opacity: 0.5;
     }
 }
 
@@ -306,7 +314,7 @@ a.sociala {
         padding: 0.3em 1.5em;
     }
     footer {
-        padding: 0 20em 0.5em;
+        padding: 0 5em 0.5em;
     }
 }
 @media (min-width: 1400px) {
@@ -321,9 +329,7 @@ a.sociala {
         right: 30px;
         top: 10px;
     }
-    footer {
-        padding: 0 30em 0.5em;
-    }
+    
 }
 @media (min-width: 2500px) {
     div.header {
