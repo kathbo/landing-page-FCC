@@ -71,7 +71,7 @@ main {
 
 h1 {
     font-weight: 700;
-    font-size: clamp(1.7em, 2.5vw, 3em);
+    font-size: clamp(1.7em, 3vw, 5em);
     line-height: 1.2em;
 }
 p#main-p {
@@ -88,8 +88,7 @@ img#sample-img {
     max-width: 100%;
     height: auto;
     display: block;
-
-    
+    margin: auto;
 }
 
 /* form */
@@ -163,7 +162,6 @@ a.sociala {
     text-decoration: none;
 }
 .kath {
-    color: #2F759E;
     font-weight: 600;
 }
 
@@ -266,9 +264,22 @@ a.sociala {
         flex-direction: row;
         padding: 3em 1.5em 0;
     }
+    div.main-text {
+        max-width: 200%;
+    }
+    div.image {
+        position: relative;
+        max-width: 60%;
+    }
     img#sample-img {
         max-width: 100%;
         margin-left: auto;
+    }
+    input {
+        height: 40px
+    }
+    button#submitbutton {
+        top: 7px;
     }
     footer {
         padding: 0 15em 0.5em;
@@ -291,6 +302,9 @@ a.sociala {
     div.image {
         max-width: 60%;
     }
+    button#submitbutton {
+        padding: 0.3em 1.5em;
+    }
     footer {
         padding: 0 20em 0.5em;
     }
@@ -298,6 +312,14 @@ a.sociala {
 @media (min-width: 1400px) {
     div.image1 {
         max-width: 50%;
+    }
+    input {
+        width: 90%;
+        height: 45px;
+    }
+    button#submitbutton {
+        right: 30px;
+        top: 10px;
     }
     footer {
         padding: 0 30em 0.5em;
