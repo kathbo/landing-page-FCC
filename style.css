@@ -330,15 +330,11 @@ img.social-img {
     }
 }
 @media (min-width: 1400px) {
-    div.image1 {
-        max-width: 50%;
-    }
     input {
-        width: 90%;
         height: 45px;
     }
     button#submitbutton {
-        right: 30px;
+        right1: 30px;
         top: 10px;
     }
     
@@ -348,7 +344,7 @@ img.social-img {
         background-repeat: repeat, no-repeat;
     }
     div.header {
-        padding: 1em 8em 0;
+        padding: 1em 20em 0;
     }
     img#header-img {
         width: 13em;
@@ -358,27 +354,39 @@ img.social-img {
         margin-top: 1.4em;
         margin-left: 2em;
     }
-    
+    .quote-nav {
+        border-radius: 26px;
+    }
     main {
-        padding: 2em 8em 0;
+        padding: 2em 20em 0;
     }
     h1 {
-        font-size: 3.2em;
+        font-size: 4em;
+    }
+    div.main-text {
+        max-width: 35%;
     }
     p#main-p {
         font-size: 1.7em;
     }
     input {
-        height: 50px;
+        height: 60px;
         font-size: 1.2em;
     }
     button#submitbutton {
         font-size: 1.2em;
         right: -30px;
-        top: 7px;
+        top: 11px;
     }
     footer {
-        padding: 0 60em 0.5em;
+        padding: 0 20em 0.5em;
+    }
+    div.circle {
+        width: 2.5em;
+        height: 2.5em;
+    }
+    img.social-img {
+        width: 100%;
     }
     p#p-foot {
         font-size: 1.3em;
