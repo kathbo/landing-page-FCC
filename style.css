@@ -329,7 +329,21 @@ img.social-img {
     }
     footer {
         padding: 0 5em 0.5em;
+        position: relative;
     }
+}
+@media (min-width: 1200px) {
+    input {
+        height: 45px;
+    }
+    button#submitbutton {
+        top: 10px;
+    }
+    div#footer {
+        position: absolute;
+        top: -6em;
+    }
+    
 }
 @media (min-width: 1400px) {
     input {
@@ -337,8 +351,7 @@ img.social-img {
     }
     button#submitbutton {
         top: 10px;
-    }
-    
+    }    
 }
 @media (min-width: 2500px) {
     body {
