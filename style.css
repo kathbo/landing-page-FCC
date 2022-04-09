@@ -8,7 +8,7 @@ html {
     background-size: cover;
 }
 body {
-    background-image: url(/pics/Strip-Patterns.png),
+    background-image: url(pics/background-pattern.png),
       linear-gradient(155.52deg, #F8C7C8 18.54%, #FAC1C2 24.61%, #FEB6B8 42.81%, #FFB2B4 61.01%, #DC939C 105.21%);
     background-repeat: no-repeat, no-repeat;
     background-position: center top, center;
@@ -21,7 +21,6 @@ body {
 .header {
     overflow: hidden;
     text-align: right;
-
     padding: 0.5em;
 }
 
@@ -337,7 +336,6 @@ img.social-img {
         height: 45px;
     }
     button#submitbutton {
-        right1: 30px;
         top: 10px;
     }
     
