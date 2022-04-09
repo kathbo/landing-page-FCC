@@ -353,7 +353,7 @@ img.social-img {
         top: 10px;
     }    
 }
-@media (min-width: 2500px) {
+@media (min-width: 2300px) {
     body {
         background-repeat: repeat, no-repeat;
     }
@@ -395,12 +395,15 @@ img.social-img {
     footer {
         padding: 0 20em 0.5em;
     }
+    div#footer {
+        top: -8em;
+    }
     div.circle {
-        width: 2.5em;
-        height: 2.5em;
+        width: 3em;
+        height: 3em;
     }
     img.social-img {
-        width: 100%;
+        width: 150%;
     }
     p#p-foot {
         font-size: 1.3em;
