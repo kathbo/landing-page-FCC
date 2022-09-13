@@ -298,7 +298,7 @@ img.social-img {
         max-width: 60%;
     }
     img#sample-img {
-        max-width: 100%;
+        min-width: 100%;
         margin-left: auto;
     }
     input {
@@ -331,6 +331,32 @@ img.social-img {
     footer {
         padding: 0 1.5em;
 
+    }
+}
+@media (min-width: 1200px) {
+    .content {
+        width: 60em;
+    }
+    main {
+        padding: 0;
+    }
+    div.image {
+        max-width: 65%;
+    }
+    footer {
+        padding: 0;
+        width: 60em
+    }
+}
+@media (min-width: 1400px) {
+    .content {
+        width: 70em;
+    }
+    div.image {
+        max-width: 70%;
+    }
+    footer {
+        width: 70em
     }
 }
 /* @media (min-width: 950px) {
