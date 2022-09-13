@@ -13,6 +13,7 @@ body {
     background-position: center top, center;
     min-width: 100vw;
     min-height: 100vh;
+    aaaaaaaaaaoverflow: hidden;
  }
 
 /* header */
@@ -34,7 +35,7 @@ body {
     float: left;
 }
 img#header-img {
-    width: clamp(5em, 15vw, 8em);
+    width: 5em;
     margin: auto;
 }
 
@@ -70,13 +71,13 @@ main {
 
 h1 {
     font-weight: 700;
-    font-size: clamp(1.7em, 3vw, 5em);
+    font-size: 1.7em;
     line-height: 1.2em;
 }
 p#main-p {
     padding: 0.9em 0;
     line-height: 1.3em;
-    font-size: clamp(1em, 1vw, 1.5em);
+    font-size: 1em;
     opacity: 0.8;
 }
 span {
@@ -161,7 +162,7 @@ img.social-img {
 #p-foot {
     margin-top: 0.5em;
     text-align: center;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 .authors {
     text-decoration: none;
@@ -212,7 +213,7 @@ img.social-img {
 }
 
 @media (min-width: 400px) {
-    div.header {
+    .header {
         padding: 0.5em 0.8em;
     }
     main {
@@ -271,13 +272,23 @@ img.social-img {
         margin-right: auto;
     }
 }
-@media all and (min-width: 800px) {
+@media (min-width: 800px) {
     .header {
-        padding: 0.5em 1.5em 0;
+        padding: 0.5em 2em 0;
+    }
+    .content {
+        width: 50em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     main {
         flex-direction: row;
         padding: 3em 1.5em 0;
+    }
+    h1 {
+        font-size: 2.5em;
     }
     div.main-text {
         max-width: 200%;
@@ -297,7 +308,11 @@ img.social-img {
         top: 7px;
     }
     footer {
-        padding: 0 1.5em 0.5em;
+        position: absolute;
+        bottom: 0;
+        width: 50em;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     div#social {
         justify-content: space-between;
@@ -308,6 +323,18 @@ img.social-img {
     }
 }
 @media (min-width: 950px) {
+    .header {
+        padding: 0.5em 2em 0;
+    }
+    .content {
+        width: 55em;
+    }
+    footer {
+        padding: 0 1.5em;
+
+    }
+}
+/* @media (min-width: 950px) {
     div.header {
         padding: 0.5em 5em 0;
     }
@@ -407,4 +434,4 @@ img.social-img {
     p#p-foot {
         font-size: 1.3em;
     }
-}
+} */
