@@ -29,7 +29,6 @@ body {
     color: black;
     text-decoration: none;
     font-weight: 500;
-    font-size: 1em;
 }
 .active { /* logo */
     float: left;
@@ -163,6 +162,7 @@ img.social-img {
     margin-top: 0.5em;
     text-align: center;
     font-size: 0.9em;
+    opacity: 0.5;
 }
 .authors {
     text-decoration: none;
@@ -319,7 +319,6 @@ img.social-img {
     }
     #p-foot {
         text-align: left;
-        opacity: 0.5;
     }
 }
 @media (min-width: 950px) {
